@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-lavender: #EDE9FE;
+  --color-lavender-hover: #DDD6FE;
+  --color-violet-primary: #7C3AED;
+  --color-violet-secondary: #8B5CF6;
+  --color-navy-ink: #0F172A;
+  --color-slate-muted: #64748B;
+  --color-hairline: #E2E8F0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.shadow-level-1 {
+  box-shadow: 0px 1px 3px rgba(15, 23, 42, 0.04), 0px 4px 6px -2px rgba(15, 23, 42, 0.02);
+}
+
+.shadow-level-2 {
+  box-shadow: 0px 8px 16px -4px rgba(124, 58, 237, 0.08), 0px 4px 6px -2px rgba(15, 23, 42, 0.04);
+}
+
+.shadow-level-3 {
+  box-shadow: 0px 20px 25px -5px rgba(15, 23, 42, 0.08), 0px 8px 10px -6px rgba(15, 23, 42, 0.04);
+}
+
+.tf-focus-ring:focus {
+  outline: none;
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

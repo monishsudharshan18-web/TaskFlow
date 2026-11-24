@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow",
+  "description": "Focused SaaS productivity workspace for managing Kanban boards, sprint tasks, project timelines, and team workloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

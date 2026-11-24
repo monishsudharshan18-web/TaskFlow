@@ -1,0 +1,242 @@
+---
+name: TaskFlow
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#4a4455'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#7b7487'
+  outline-variant: '#ccc3d8'
+  surface-tint: '#732ee4'
+  primary: '#630ed4'
+  on-primary: '#ffffff'
+  primary-container: '#7c3aed'
+  on-primary-container: '#ede0ff'
+  inverse-primary: '#d2bbff'
+  secondary: '#6b38d4'
+  on-secondary: '#ffffff'
+  secondary-container: '#8455ef'
+  on-secondary-container: '#fffbff'
+  tertiary: '#474e64'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#5e667d'
+  on-tertiary-container: '#dee5ff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#eaddff'
+  primary-fixed-dim: '#d2bbff'
+  on-primary-fixed: '#25005a'
+  on-primary-fixed-variant: '#5a00c6'
+  secondary-fixed: '#e9ddff'
+  secondary-fixed-dim: '#d0bcff'
+  on-secondary-fixed: '#23005c'
+  on-secondary-fixed-variant: '#5516be'
+  tertiary-fixed: '#dae2fd'
+  tertiary-fixed-dim: '#bec6e0'
+  on-tertiary-fixed: '#131b2e'
+  on-tertiary-fixed-variant: '#3f465c'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+  headline-xl-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 34px
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  margin: 2rem
+  margin-sm: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system establishes a focused, modern, and reliable SaaS productivity environment designed to eliminate cognitive drag and streamline high-volume daily operations. It caters to high-performing product teams, engineering squads, and modern knowledge workers who require maximum clarity, systematic structure, and fluid execution.
+
+The visual style blends crisp modern minimalism with soft tactile refinement:
+- **Clean Canvas Architecture:** Crisp slate and pure white foundation layers keep the focal point entirely on user data and workflows.
+- **Vibrant Accent Cadence:** Deep royal violet drives focused interactions, complemented by soft lavender atmospheric fills and purposeful status indicators.
+- **Quiet Micro-Polish:** Subtly rounded structures, gossamer border dividers, and soft ambient shadows deliver a modern, premium enterprise aesthetic without distracting from content density.
+
+## Colors
+
+The palette leverages a structured slate-to-violet spectrum engineered for sustained readability and high visual hierarchy in data-dense interfaces.
+
+### Core Role Assignments
+- **Primary (`#7C3AED`):** The primary royal violet anchor. Applied to primary calls-to-action, active navigation states, primary focus rings, and high-impact key indicators.
+- **Secondary (`#8B5CF6`):** Vibrant interactive violet. Used for hover states on primary interactive elements, progress tracking, and key highlighted badges.
+- **Tertiary / Base Dark (`#0F172A`):** Deep rich dark navy. Governs primary typographic headings, high-contrast badges, dark-themed utility sidebars, and critical text elements.
+- **Neutral (`#64748B`):** Balanced slate grey. Anchors secondary typography, subtle iconography, inactive control rails, and structural borders.
+
+### Surface and Tint Ecosystem
+- **Canvas (`#F8FAFC`):** Crisp ultra-light slate background establishing uniform interface contrast.
+- **Surface Elevation 0 (`#FFFFFF`):** Pure white container surfaces for modular panels, task detail modals, and standard data cards.
+- **Surface Elevation 1 / Lavender Tint (`#EDE9FE`):** Soft violet tint dedicated to selection states, subtle highlight strips, interactive chip fills, and badge foundations.
+
+### Functional Status Indicators
+- **Success (`#10B981`):** Emerald green for completed tasks, healthy delivery states, and positive metric indicators.
+- **Warning (`#F59E0B`):** Warm amber for upcoming deadlines, pending review states, and non-blocking warnings.
+- **Destructive / Urgent (`#EF4444`):** Crisp rose red for overdue status tags, critical priority indicators, and destructive workflow confirmations.
+
+## Typography
+
+The typographic hierarchy pairs the friendly, balanced geometry of **Plus Jakarta Sans** for structural wayfinding with the neutral, high-density legibility of **Inter** for core functional interfaces.
+
+### Hierarchy & Application Rules
+- **Display & Section Titles:** Use **Plus Jakarta Sans** for all structural headings (`headline-*`). Keep tracking neutral to slightly snug (`-0.01em` to `-0.02em`) on headline-xl and headline-lg to establish strong graphic grounding.
+- **Data, Content & Lists:** Use **Inter** across all `body-*` levels. Its tall x-height and clear apertures ensure effortless scanning across multi-column Kanban boards, data grids, and task lists.
+- **Labels, Badges & Metadata:** Use **Inter** (`label-*`) with medium-to-semibold weights. For small status tags (`label-sm`), use uppercase styling with subtle tracking expansion (`0.04em`) to ensure legibility on colored chip surfaces.
+
+## Layout & Spacing
+
+The layout model is anchored on an 8pt base grid unit (`0.5rem`), ensuring consistent optical alignment across nested containers, dashboard widgets, and task cards.
+
+### Grid & Layout Structure
+- **Desktop (1024px+):** Fluid 12-column workspace layout with `2rem` outer margins and `1.5rem` gutters. Primary sidebars use a fixed width (`16rem` / 256px), while the central work surface and side panels adapt dynamically to viewport width.
+- **Tablet (768px - 1023px):** Fluid 8-column layout. Main navigation collapses into an icon rail or off-canvas drawer. Outer margins reduce to `1.5rem` with `1rem` gutters.
+- **Mobile (< 768px):** Fluid 4-column layout. Margin shrinks to `1rem` (`margin-sm`), gutters reduce to `1rem` (`gutter-sm`). Horizontal Kanban boards adapt to vertical lists or single-column swipe carousels.
+
+### Component Spacing Rhythms
+- Use `space-xs` (4px) strictly for micro-spacing between icons and inline badge labels.
+- Use `space-sm` (8px) for input internal vertical padding, icon-to-text separation in buttons, and list item gaps.
+- Use `space-md` (16px) for card body padding, stack separations, and form field groupings.
+- Use `space-lg` (24px) for dashboard widget padding, table column padding, and section headers.
+- Use `space-xl` (32px) to separate major board columns, dashboard cards, and modal dialog sections.
+
+## Elevation & Depth
+
+This design system uses a combination of soft, ambient tinted drop shadows, delicate low-contrast borders, and clean white-to-slate layering to build depth without visual weight.
+
+### Surface Tiers
+- **Base Canvas (`#F8FAFC`):** The ground level of the application. Everything sits on this crisp, low-glare surface.
+- **Surface Raised (`#FFFFFF`):** Main board cards, table rows, and dashboard widgets. Outlined by a crisp `1px` border in `#E2E8F0`.
+- **Surface Overlay (`#FFFFFF`):** Flyout drawers, context menus, tooltips, and modal sheets.
+
+### Ambient Shadow Hierarchy
+- **Level 1 (Subtle Rest):** `0px 1px 3px rgba(15, 23, 42, 0.04), 0px 4px 6px -2px rgba(15, 23, 42, 0.02)`. Applied to resting task cards and standard content modules.
+- **Level 2 (Hover / Active Drag):** `0px 8px 16px -4px rgba(124, 58, 237, 0.08), 0px 4px 6px -2px rgba(15, 23, 42, 0.04)`. Applied to cards during hover or active dragging, tinted with subtle primary violet to reinforce focus.
+- **Level 3 (Overlays & Dialogs):** `0px 20px 25px -5px rgba(15, 23, 42, 0.08), 0px 8px 10px -6px rgba(15, 23, 42, 0.04)`. Applied to central modal dialogs and dropdown menus.
+
+## Shapes
+
+The design system adopts **Roundedness Level 2** (`rounded: 0.5rem` / 8px base) to convey a friendly yet disciplined product personality.
+
+### Radius Distribution
+- **Controls & Small Components (`rounded`, 8px / 0.5rem):** Applied to buttons, text input fields, badge pills, checkboxes, search controls, and dropdown trigger selectors.
+- **Medium Panels & Cards (`rounded-lg`, 12px / 0.75rem - 16px / 1rem):** Applied to task list cards, interactive kanban items, popovers, and table containers. Primary dashboard cards use `16px` (`rounded-lg`), while nested child items use `12px`.
+- **Large Modals & App Shell Windows (`rounded-xl`, 24px / 1.5rem):** Applied to central workflow modals, full task inspector drawers, and floating command palettes.
+- **Avatars & Status Dots:** Strict circular framing (`rounded-full` / 9999px) for team avatars, status pills, and toggle thumb switches.
+
+## Components
+
+### Buttons
+- **Primary:** Filled `#7C3AED` with pure white text, font `label-lg`, height 40px, padding `0 16px`, corner radius `8px` (`rounded`). Hover shifts to `#8B5CF6`. Active state scales subtly (`0.98`) with ambient shadow.
+- **Secondary / Soft:** Filled `#EDE9FE` with `#7C3AED` text. Hover shifts to `#DDD6FE`. Provides lower emphasis for auxiliary actions.
+- **Outline / Neutral:** `#FFFFFF` background with `1px` solid `#E2E8F0` border and `#0F172A` text. Hover fills `#F8FAFC` and transitions border to `#CBD5E1`.
+- **Ghost:** Transparent background with `#64748B` text. Hover fills `#F1F5F9` with `#0F172A` text.
+
+### Chips & Badges
+- **Status Badges:** Height 24px, padding `2px 8px`, corner radius `6px` or fully rounded pill.
+  - *Completed:* `#ECFDF5` fill with `#047857` text.
+  - *In Progress:* `#EDE9FE` fill with `#6D28D9` text.
+  - *Blocked / High Priority:* `#FEF2F2` fill with `#B91C1C` text.
+  - *Upcoming:* `#FFFBEB` fill with `#B45309` text.
+- **Tag Chips:** Subtle slate fill `#F1F5F9` with `#475569` text, including a leading dot indicator or Lucide category icon.
+
+### Form Inputs & Search Fields
+- Base height 40px, corner radius `8px`. Solid `#FFFFFF` fill with `1px` `#E2E8F0` border.
+- Text rendered in `body-md` with `#0F172A` color; placeholder rendered in `#94A3B8`.
+- Focus state eliminates standard browser outlines and applies a `1px` `#7C3AED` border accompanied by an ambient `0 0 0 3px rgba(124, 58, 237, 0.15)` glow ring.
+
+### Cards & Task Tiles
+- Resting state: `#FFFFFF` fill, `1px` border `#E2E8F0`, corner radius `12px` to `16px`, ambient level 1 elevation.
+- Padding: `16px` (`space-md`) for standard items; `20px` to `24px` (`space-lg`) for primary overview widgets.
+- Interactive states: Smooth 150ms ease-out elevation shift to Level 2 with border transitioning to `#DDD6FE`.
+
+### Checkboxes & Selection Controls
+- Checkbox dimensions: 18px x 18px, corner radius `4px`.
+- Inactive state: `1.5px` border `#CBD5E1` on `#FFFFFF` fill.
+- Checked state: `#7C3AED` fill with an inset crisp white checkmark glyph.
+- Radio buttons: 18px diameter circular container with centered 8px solid violet dot when active.
+
+### Lists & Tables
+- Table headers: Height 36px, `label-sm` in `#64748B`, uppercase, tracking `0.04em`, resting on a `#F8FAFC` ground.
+- Rows: Height 52px, alternating or clean white rows separated by `1px` `#F1F5F9` borders. Hover renders subtle `#F8FAFC` background tint across the full row.
+
+### Specialized Workspace Components
+- **Kanban Column Header:** Features a count badge with soft lavender fill `#EDE9FE`, title in `headline-sm`, and trailing quick-add button.
+- **Progress Trackers:** 6px track height with `#E2E8F0` background and rounded ends. Active filled track uses a clean horizontal gradient from `#7C3AED` to `#8B5CF6`.
