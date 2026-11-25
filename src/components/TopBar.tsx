@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Menu, Plus, Search, X } from 'lucide-react';
+import { ChevronRight, Database, Menu, Plus, Search, X } from 'lucide-react';
 import { ProjectItem, ViewType } from '../types/taskflow';
 
 interface TopBarProps {
@@ -10,6 +10,8 @@ interface TopBarProps {
   onSearchChange: (val: string) => void;
   onOpenNewTask: () => void;
   onOpenMobileMenu: () => void;
+  onOpenSupabaseModal?: () => void;
+  supabaseConnected?: boolean;
 }
 
 const VIEW_LABELS: Record<ViewType, string> = {
@@ -28,6 +30,8 @@ export const TopBar: React.FC<TopBarProps> = ({
   onSearchChange,
   onOpenNewTask,
   onOpenMobileMenu,
+  onOpenSupabaseModal,
+  supabaseConnected = false,
 }) => {
   return (
     <header className="sticky top-0 z-30 h-16 bg-white/95 backdrop-blur-sm border-b border-[#E2E8F0] px-4 sm:px-8 flex items-center justify-between gap-4 sm:gap-8">
@@ -90,6 +94,25 @@ export const TopBar: React.FC<TopBarProps> = ({
             </button>
           )}
         </div>
+
+        {onOpenSupabaseModal && (
+          <button
+            type="button"
+            onClick={onOpenSupabaseModal}
+            className={`h-10 px-3 rounded-lg border text-xs font-semibold inline-flex items-center gap-2 transition-all shrink-0 ${
+              supabaseConnected
+                ? 'bg-[#ECFDF5] border-[#A7F3D0] text-[#065F46] hover:bg-[#D1FAE5]'
+                : 'bg-white border-[#E2E8F0] text-[#475569] hover:bg-[#F8FAFC]'
+            }`}
+            title="Supabase Database Status & Setup"
+          >
+            <Database className={`w-3.5 h-3.5 ${supabaseConnected ? 'text-[#10B981]' : 'text-[#64748B]'}`} />
+            <span className="hidden md:inline">
+              {supabaseConnected ? 'Supabase Live' : 'Supabase Config'}
+            </span>
+            <span className={`w-2 h-2 rounded-full ${supabaseConnected ? 'bg-[#10B981]' : 'bg-[#F59E0B]'}`} />
+          </button>
+        )}
 
         <button
           type="button"
